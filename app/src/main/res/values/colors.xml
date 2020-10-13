@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F94C4C</color>
+    <color name="colorPrimaryDark">#FC5656</color>
+    <color name="colorAccent">#F94C4C</color>
+    <color name="colorMain">#F94C4C</color>
+    <color name="blue">#364FE8</color>
+    <color name="colorOrange">#FFA000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="pinkColor">#F712F0</color>
+    <!-- Chat Activity -->
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+</resources>

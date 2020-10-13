@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingTop="24dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+   <!--     <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.Toolbar">
+
+        </androidx.appcompat.widget.Toolbar>-->
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_profile_icon">
+
+                    </ImageView>
+
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:background="#F18738" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="-80dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/login"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorOrange"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                                android:id="@+id/login_cpp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                app:ccp_defaultNameCode="SA"
+                                android:visibility="gone"
+                                android:padding="5dp">
+
+                            </com.rilixtech.widget.countrycodepicker.CountryCodePicker>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_weight="4"
+                                android:textColorHint="#FFB3B3B3">
+
+                                <EditText
+                                    android:id="@+id/login_userNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:drawableStart="@drawable/ic_email_black_24dp"
+                                    android:drawablePadding="16dp"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    android:foregroundTint="@color/colorPrimary"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:hint="@string/email"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColorHint="#FFB3B3B3"
+                            android:layout_marginHorizontal="5dp"
+                            app:passwordToggleEnabled="true">
+
+                            <EditText
+                                android:id="@+id/login_userPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableStart="@drawable/ic_lock_gray_24dp"
+                                android:drawablePadding="16dp"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:foregroundTint="@color/colorPrimary"
+                                android:hint="@string/password"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/login_forgetPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/forgetpassword">
+
+                        </TextView>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                         android:layout_marginTop="5dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/login_rbPatient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:text="@string/patient"
+                                android:fontFamily="@font/poppins_regular"
+                                android:buttonTint="@color/colorPrimary"
+                                android:textColor="@color/colorOrange"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/login_rbDoctor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="@string/doctor"
+                                android:textColor="@color/colorOrange"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textStyle="bold" />
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/login_btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/login"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="12sp"
+
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have Account?"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_regular"
+        />
+    <TextView
+        android:id="@+id/login_createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Create Account!"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/poppins_regular"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+    </TextView>
+
+</LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    >
+
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:foreground="?attr/selectableItemBackground"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/login_gmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:layout_marginTop="10dp"
+                      android:background="@drawable/buttonshape"
+                        android:backgroundTint="@android:color/darker_gray"
+
+                        android:orientation="horizontal">
+                        <ImageView
+
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/ic_gmail"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Continue with Google"
+                            android:textSize="13sp"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

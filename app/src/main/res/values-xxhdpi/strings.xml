@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_no_format">+(Country Code)(No)</string>
+    <string name="next">Next</string>
+    <string name="Today">Today</string>
+    <string name="notavailable">Not Available</string>
+    <string name="Approve">Approve</string>
+    <string name="emergencyhelp">Emergency Help</string>
+    <string name="emergency">Emergency</string>
+    <string name="contactnow">Contact Now</string>
+    <string name="FindHelp">Find Help</string>
+</resources>

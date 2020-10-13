@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navd_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/navd_bookings"
+            android:icon="@drawable/ic_bookings"
+            android:title="@string/menu_bookings" />
+        <item
+            android:id="@+id/navd_consultation"
+            android:icon="@drawable/ic_consultation"
+            android:title="@string/menu_consultation" />
+        <item
+            android:id="@+id/navd_messages"
+            android:icon="@drawable/ic_email"
+            android:title="@string/menu_messages" />
+        <item
+            android:id="@+id/navd_contact_us"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/menu_contactus" />
+        <item
+            android:id="@+id/navd_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share" />
+        <item
+            android:id="@+id/navd_logout"
+            android:icon="@drawable/ic_logout_new"
+            android:title="@string/menu_logout" />
+    </group>
+
+
+
+</menu>

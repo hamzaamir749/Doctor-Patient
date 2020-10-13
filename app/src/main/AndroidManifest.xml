@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.stackbuffers.doctor_patient_project"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.Same.MessagesListActivity"></activity>
+        <activity android:name=".Activities.Same.VoiceChatViewActivity">
+        </activity>
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Doctor.EmergencyPatientActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.EmergencyHelpStatusActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.EmergencyDoctorsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Same.ForgetPasswordActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Same.VideoChatViewActivity"
+            android:theme="@style/MyAppTheme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Doctor.TodayConsultationsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Doctor.TodayBookingsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Doctor.ConsultationMenuDoctorActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Doctor.BookingMenuDoctorActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Doctor.HomeScreenDoctorActivity"
+            android:label="@string/title_activity_home_screen_doctor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.Patient.ConsultationMenuActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.BookingMenuActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.HospitalsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.HospitalDetailsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.ConsultDoctorActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.BookDoctorActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.UpdatePatientProfile"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.SearchConsultantActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Same.PhoneAuthActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.ContactUsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.Patient.ApprovedDoctorsConsultationsActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity android:name=".Activities.Patient.SearchDoctorsActivity" />
+        <activity
+            android:name=".Activities.Patient.HomeScreenPatientActivity"
+            android:label="@string/title_activity_home_screen_patient"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.OTPActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/MyAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".HelperClasses.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

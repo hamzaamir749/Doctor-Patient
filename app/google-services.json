@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "794400688993",
+    "firebase_url": "https://doctorpatientproject-65040.firebaseio.com",
+    "project_id": "doctorpatientproject-65040",
+    "storage_bucket": "doctorpatientproject-65040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794400688993:android:c67d0d7114592590225320",
+        "android_client_info": {
+          "package_name": "com.stackbuffers.doctor_patient_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794400688993-03h9vb02mokptfhfocnl117ud3oc1j2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stackbuffers.doctor_patient_project",
+            "certificate_hash": "c55286a528ff81a597df351a441590f39e0f7b77"
+          }
+        },
+        {
+          "client_id": "794400688993-20emcaudlnedj6kqipijgfb876edtvi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUwS2cTURoaeXB7w5zqYvJZXSHHR6tn7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794400688993-20emcaudlnedj6kqipijgfb876edtvi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
